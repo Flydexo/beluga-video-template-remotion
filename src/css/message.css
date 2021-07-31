@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Whitney Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Whitney Medium'), url('../font/whitneymedium.woff') format('woff');
+}
+
+.container{
+  background: #3F4147;
+  width: 1920px;
+  height: 500px;
+  color: #EFF1F4;
+  font-family: 'Whitney Medium';
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 8fr;
+  grid-template-rows: 0.9fr 1fr;
+  align-items: end;
+  margin-top: calc(1080px - 500px*1.5);
+}
+
+.profile-picture{
+  border-radius: 50%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  place-self: center;
+  width: 150px;
+}
+
+.date{
+  color: #7A7C82;
+  grid-column: 3 / span 1;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.message{
+  grid-column: 2 / span 2;
+  font-size: 40px;
+  align-self: start;
+  justify-self: start;
+  color: #e2e2e2;
+  font-weight: 200;
+  margin-top: 15px;
+}
+
+.pseudo{
+  grid-column: 2 / span 1;
+  font-weight: 400;
+  font-size: 50px;
+}
