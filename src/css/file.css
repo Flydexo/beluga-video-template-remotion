@@ -1,0 +1,39 @@
+.file-container{
+  background-color: var(--dark-background);
+  border: 2px solid var(--alt-dark);
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 15px 5px 15px 15px;
+  align-items: center;
+  width: max-content;
+  column-gap: 15px;
+  margin-top: 25px;
+}
+
+.file-icon{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.file-name{
+  color: var(--blue-link);
+  grid-column: 2 / span 1;
+  align-self: end;
+  font-size: 30px;
+}
+
+.file-size{
+  color: var(--grey);
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+  align-self: start;
+  font-size: 25px;
+}
+
+.file-download{
+  width: 50px;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}

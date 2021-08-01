@@ -15,7 +15,7 @@
   background: #3F4147;
   width: 1920px;
   height: 500px;
-  color: #EFF1F4;
+  color: var(--white);
   font-family: 'Whitney Medium';
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -25,7 +25,7 @@
 }
 
 .welcome-date{
-  color: #7A7C82;
+  color: var(--grey);
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   align-self: start;

@@ -15,7 +15,7 @@
   background: #3F4147;
   width: 1920px;
   height: 500px;
-  color: #EFF1F4;
+  color: var(--white);
   font-family: 'Whitney Medium';
   display: grid;
   grid-template-columns: 1fr 0.8fr 8fr;
@@ -33,8 +33,7 @@
 }
 
 .date{
-  color: #7A7C82;
-  grid-column: 3 / span 1;
+  color: var(--grey);
   font-size: 30px;
   margin-bottom: 5px;
 }
@@ -44,13 +43,13 @@
   font-size: 40px;
   align-self: start;
   justify-self: start;
-  color: #e2e2e2;
+  color: var(--text-white);
   font-weight: 200;
   margin-top: 15px;
 }
 
 .pseudo{
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
   font-weight: 400;
   font-size: 50px;
 }
